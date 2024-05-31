@@ -1,12 +1,14 @@
-
 $(document).ready(function() {
     var envelope = $("#envelope");
+    var heartIcon = $(".heart"); // select the heart icon element
     var btn_open = $("#open");
     var btn_reset = $("#reset");
-    var letter_link = $("#letter-link");
 
     envelope.click(function() {
         open();
+    });
+    heartIcon.click(function() {
+        window.open("https://example.com", "_blank"); // open a new tab with the desired URL
     });
     btn_open.click(function() {
         open();
@@ -14,17 +16,14 @@ $(document).ready(function() {
     btn_reset.click(function() {
         close();
     });
-    letter_link.click(function() {
-        window.open('https://ishwari0109.github.io/ishwari0901.github.io/', '_blank');
-    });
+
     function open() {
         envelope.addClass("open")
-            .removeClass("close");
+           .removeClass("close");
     }
 
     function close() {
         envelope.addClass("close")
-            .removeClass("open");
+           .removeClass("open");
     }
-
-})
+});
