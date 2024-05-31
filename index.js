@@ -8,7 +8,7 @@ $(document).ready(function() {
         open();
     });
     heartIcon.click(function() {
-        window.open("https://example.com", "_blank"); // open a new tab with the desired URL
+        window.open("https://ishwari0109.github.io/ishwari0901.github.io/", "_blank"); // open a new tab with the desired URL
     });
     btn_open.click(function() {
         open();
