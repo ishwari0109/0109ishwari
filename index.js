@@ -13,7 +13,9 @@ $(document).ready(function() {
     btn_reset.click(function() {
         close();
     });
-
+    letter_link.click(function() {
+        window.open('https://ishwari0109.github.io/ishwari0901.github.io/', '_blank');
+    });
     function open() {
         envelope.addClass("open")
             .removeClass("close");
